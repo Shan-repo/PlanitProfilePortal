@@ -6,7 +6,8 @@ import { Link } from 'react-router-dom'
 import { useHistory } from "react-router-dom";
 import 'materialize-css/dist/css/materialize.min.css';
 import 'materialize-css/dist/js/materialize.min.js';
-
+import 'react-mdl/extra/material.css';
+import  'react-mdl/extra/material.js';
 
 function App() {
   const history = useHistory();
