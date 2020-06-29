@@ -1,15 +1,18 @@
-import React from 'react';
-import { HashLink as Link } from 'react-router-hash-link';
+import React, { Component } from 'react';
+import profile from '../../profile.json';
+import moment from "moment";
 
-export default function Certification() {
-	return (
-		<div>
-			<div class='card'>
-				<div class='card-content'>
-					<h6>
-						<strong>Certifcation</strong>
-					</h6>
-					<table class='striped'>
+
+
+class Certification extends Component {
+	render() { 
+	  return (
+		<div className="card">
+		  <div className="card-content">
+			<h4 className="header-font">
+			CERTIFICATION
+			</h4>
+			<table class='striped'>
 						<thead>
 							<tr>
 								<th>Certificate</th>
@@ -18,46 +21,33 @@ export default function Certification() {
 							</tr>
 						</thead>
 						<tbody>
-							<tr>
-								<td>Web Development</td>
-								<td>Jan 2018</td>
-								<td>
-									<Link to='/details' class='btn blue lighten-2'>
-										View
-									</Link>
-								</td>
-							</tr>
-							<tr>
-								<td>Graphic Design</td>
-								<td>May 2018</td>
-								<td>
-									<Link to='/details' class='btn blue lighten-2'>
-										View
-									</Link>
-								</td>
-							</tr>
-							<tr>
-								<td>Tech Gadgets</td>
-								<td>June 2018</td>
-								<td>
-									<Link to='/details' class='btn blue lighten-2'>
-										View
-									</Link>
-								</td>
-							</tr>
-							<tr>
-								<td>Other</td>
-								<td>Dec 2018</td>
-								<td>
-									<Link to='/details' class='btn blue lighten-2'>
-										View
-									</Link>
-								</td>
-							</tr>
+						{
+							profile.Certificates.map((Certificate) => {
+								const cDate = moment(Certificate.CertificationDate);
+								return (
+
+									<tr>
+									<td>{Certificate.CertificateName}</td>
+									<td>{cDate.format('MMM YYYY')}</td>
+									<td>
+										<a rel="noopener noreferrer" target="_blank" href={Certificate.Source} class='btn blue lighten-2'>
+											View
+										</a>
+									</td>
+								</tr> 
+									
+								);
+							})
+							}
 						</tbody>
 					</table>
-				</div>
-			</div>
+		
+		  </div>
 		</div>
-	);
-}
+	  );
+	}
+  }
+  
+  export default Certification;
+
+

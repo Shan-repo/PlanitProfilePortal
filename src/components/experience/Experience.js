@@ -4,7 +4,7 @@ import moment from "moment";
 import Typography from '@material-ui/core/Typography';
 
 class Experience extends Component {
-  render() {
+  render() { 
     return (
       <div className="card">
         <div className="card-content">

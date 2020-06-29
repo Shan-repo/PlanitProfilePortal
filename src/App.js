@@ -21,7 +21,7 @@ function App() {
             <Link to="/resume">Resume</Link>
             </Navigation> */}
         </Header>
-        <Drawer title="Planit Profiles">
+        <Drawer title="Planit Profiles"  onClick={getResume} >
             <Navigation>
             <Link to="/resume">Resume</Link>
             </Navigation>
@@ -35,8 +35,8 @@ function App() {
           <FooterSection type="right">
               <FooterLinkList>
                   <Link to="/contact">Contact</Link>
-                  <a href="/contact">Help</a>
-                  <a href="/contact">Privacy & Terms</a>
+                  <a target="_blank" href="/terms">Terms & Conditions</a>
+                  <a target="_blank" href="/WebSite">Privacy</a>
               </FooterLinkList>
           </FooterSection>
       </Footer>
@@ -47,5 +47,3 @@ function App() {
 }
 
 export default App;
-
-

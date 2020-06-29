@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import About from "./about/About"
 import Skills from "./skills/Skills"
 import Experiences from "./experience/Experience";
-import Portfolios from "./portfolios/Portfolios";
+import Education from "./education/Education";
 import { AiOutlineDownload } from "react-icons/ai";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf"
@@ -54,7 +54,7 @@ export default class Resume extends Component {
 							<Experiences />
 							<Skills />
 							<Certification />
-							<Portfolios />
+							<Education />
 						</div>
 
 					</div>

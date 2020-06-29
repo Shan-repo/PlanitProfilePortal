@@ -51,6 +51,51 @@
         ]
       }
     ],
+    "Education": [
+      {
+        "Edu": "Bachelor of Engineering - Aeronautical Engineering",
+        "university": "Anna University",
+        "startDate": "2008-02-18",
+        "endDate": "2012-02-01",
+        "Percentage": "87%"
+      },
+      {
+        "Edu": "Higher Secondary",
+        "university": "Cluny Convent",
+        "startDate": "2006-02-18",
+        "endDate": "2008-02-01",
+        "Percentage": "85%"
+      }
+  
+    ],
+    "Certificates": [
+      {
+        "CertificateName": "AWS Certified Cloud Practitioner",
+        "CertificationDate": "2020-06-12",
+        "Source": "https://www.certmetrics.com/amazon/electronic_score_report.aspx?exam=912592"
+      },
+      {
+        "CertificateName": "Certified Agile Essentials",
+        "CertificationDate": "2019-11-22",
+        "Source": "https://zertdb.isqi.org/en/download/certificate/token/kP4YMu81i5NMN5n6"
+      },
+      {
+        "CertificateName": "Automation Anywhere Certified Advanced RPA Professional (V11.0)",
+        "CertificationDate": "2019-11-06",
+        "Source": "https://certificates.automationanywhere.com/575dae2d-de7a-4476-a809-03a01a758af6#gs.9dmexl"
+      },
+      {
+        "CertificateName": "ISTQB",
+        "CertificationDate": "2014-06-30",
+        "Source": "https://www.certmetrics.com/amazon/electronic_score_report.aspx?exam=912592"
+      },
+      {
+        "CertificateName": "ACCELQ Certified Automation Engineer",
+        "CertificationDate": "2020-04-20",
+        "Source": "https://www.onlineexambuilder.com/index.php?r=exam/certificate&hash=d30cedd08450d1eb944e0de1964ed88a&sessionId=31164149&id=313286&language=en"
+      }
+      
+    ],
     "LocalExperiences": [
       {
         "companyName": "Legal Aid",

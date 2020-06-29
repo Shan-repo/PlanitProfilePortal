@@ -11,6 +11,8 @@ const Main = () => (
         <Route exact path="/" component={Homepage} />
         <Route path="/resume"  component={Resume} />
         <Route path="/contact" component={Contact} />
+        <Route path='/WebSite' component={() => { window.location.replace('https://www.planittesting.com/au/privacy'); return null;} } />
+        <Route path='/terms' component={() => { window.location.replace('https://www.planittesting.com/au/terms-conditions'); return null;} } />
     </Switch>
 )
 
