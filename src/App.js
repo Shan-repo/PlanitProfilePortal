@@ -12,6 +12,7 @@ import  'react-mdl/extra/material.js';
 function App() {
   const history = useHistory();
   const getResume = () => history.push('/');
+
   return (
     
     <div className="demo-big-content">
@@ -21,9 +22,12 @@ function App() {
             <Link to="/resume">Resume</Link>
             </Navigation> */}
         </Header>
-        <Drawer title="Planit Profiles"  onClick={getResume} >
+        <Drawer title="Planit Profiles">
             <Navigation>
             <Link to="/resume">Resume</Link>
+            </Navigation>
+            <Navigation >
+            <Link to="/resourceUtilization">ResourceUtilization</Link>
             </Navigation>
         </Drawer>
         <Content>
